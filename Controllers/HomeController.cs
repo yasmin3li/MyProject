@@ -49,5 +49,27 @@ namespace MvcTodoApp.Controllers
                 task.IsComplete = true;
             return RedirectToAction("Index");
         }
+        [HttpPost]
+        public IActionResult EditTask(int id, string newTitle)
+        {
+            var task = tasks.FirstOrDefault(t => t.Id == id);
+            
+            if (task != null && !string.IsNullOrEmpty(newTitle))
+            {
+                task.Title = newTitle;
+            }
+            
+            return RedirectToAction("Index");
+        }
+        [HttpGet]
+        public IActionResult EditTask(int id)
+        {
+            var task = tasks.FirstOrDefault(t => t.Id == id);
+            if (task == null)
+            {
+                return RedirectToAction("Index");
+            }
+            return View(task);
+        }
     }
 }
