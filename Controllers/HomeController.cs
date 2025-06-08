@@ -49,6 +49,8 @@ namespace MvcTodoApp.Controllers
                 task.IsComplete = true;
             return RedirectToAction("Index");
         }
+
+        //حفظ التعديلات ثم العودة الى الصفحة الرئيسية
         [HttpPost]
         public IActionResult EditTask(int id, string newTitle)
         {
@@ -61,6 +63,8 @@ namespace MvcTodoApp.Controllers
             
             return RedirectToAction("Index");
         }
+
+        // عرض نموذج التعديل
         [HttpGet]
         public IActionResult EditTask(int id)
         {

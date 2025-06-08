@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\fourth\\SE2\\321\\MyProject\\MvcTodoApp.csproj",
+      "projectUniqueName": "D:\\fourth\\SE2\\MyProject\\MvcTodoApp.csproj",
       "projectName": "MvcTodoApp",
-      "projectPath": "D:\\fourth\\SE2\\321\\MyProject\\MvcTodoApp.csproj",
+      "projectPath": "D:\\fourth\\SE2\\MyProject\\MvcTodoApp.csproj",
       "packagesPath": "C:\\Users\\fl8000\\.nuget\\packages\\",
-      "outputPath": "D:\\fourth\\SE2\\321\\MyProject\\obj\\",
+      "outputPath": "D:\\fourth\\SE2\\MyProject\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\fl8000\\AppData\\Roaming\\NuGet\\NuGet.Config"
